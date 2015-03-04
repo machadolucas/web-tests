@@ -1,0 +1,26 @@
+@import 'glitch';
+
+body {
+	background: black;
+	color: white;
+}
+
+
+.title {
+  font-size:150px;
+  font-family: monospace;
+}
+
+.description {
+  width: 500px;
+  margin:0 auto;
+  font-family: monospace;
+  font-weight: 300;
+}
+
+.glitch{
+  color:white;
+  position:relative;
+  width:400px;
+  margin:0 auto;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "web-tests",
+  "version": "1.0",
+  "homepage": "http://machadolucas.github.io/web-tests",
+  "authors": [
+    "Lucas Machado <machadolucas@me.com>"
+  ],
+  "description": "Concept tests on web development",
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "components"
+  ]
+}
