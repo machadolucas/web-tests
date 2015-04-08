@@ -1,0 +1,74 @@
+@import "compass";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	@include background-image(linear-gradient(to bottom, white, #bcc));
+	color: #222;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin: 0.5em 1em;
+      border-radius: 5px;
+      background: #333;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    li:hover {
+      background: #777;
+    }
+  }
+
+}
+
+#board {
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.course {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background: #eee;
+  color: #555;
+  text-align: center;
+  font-weight: bold;
+  
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px;
+
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+.course:hover {
+  @include box-shadow(yellow 0px 0px 10px);
+}
+.course.doing {
+  background: #FF9742;
+  color: black;
+}
+div[class*='course'][class*='done'] {
+  background: #80DB69;
+  color: black;
+}
+.course.cb {
+  font-style: italic;
+}
+
