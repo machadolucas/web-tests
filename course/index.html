@@ -11,8 +11,8 @@
 		<h1>Minhas disciplinas</h1>
 		<nav>
 			<ul>
-				<li>Por grade original</li>
-				<li>Por execução</li>
+				<li onclick="orderOriginal();">Por grade original</li>
+				<li onclick="orderExecuted();">Por execução</li>
 			</ul>
 		</nav>
 	</header>
@@ -20,132 +20,132 @@
 	
 	<section id="board">
 
-		<div class="course origin-1 done-1" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2001"
+		<div class="course" data-origin="s1" data-done="s1"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2001"
 			data-name="Introdução à Ciência da Computação 1">ICC1</div>
-		<div class="course origin-1 done-3" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2011"
+		<div class="course" data-origin="s1" data-done="s3"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2011"
 			data-name="Cálculo 1">Calc1</div>
-		<div class="course origin-1 done-1" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0021"
+		<div class="course" data-origin="s1" data-done="s1"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0021"
 			data-name="Tratamento e Análise de Dados e Estatísticas">TADI</div>
-		<div class="course origin-1 done-1 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0011"
+		<div class="course cb" data-origin="s1" data-done="s1"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0011"
 			data-name="Ciências da Natureza">CN</div>
-		<div class="course origin-1 done-1 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0031"
+		<div class="course cb" data-origin="s1" data-done="s1"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0031"
 			data-name="Sociedade, Multiculturalismo e Direitos">SMD</div>
-		<div class="course origin-1 done-1 cb" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH0041"
+		<div class="course cb" data-origin="s1" data-done="s1"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH0041"
 			data-name="Resolução de Problemas 1">RP1</div>
-		<div class="course origin-1 done-1 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0051"
+		<div class="course cb" data-origin="s1" data-done="s1"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0051"
 			data-name="Estudos Diversificados 1">ED1</div>
 
-		<div class="course origin-2 done-2" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2002"
+		<div class="course" data-origin="s2" data-done="s2"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2002"
 			data-name="Introdução à Ciência da Computação 2">ICC2</div>
-		<div class="course origin-2 done-6" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2012"
+		<div class="course" data-origin="s2" data-done="s6"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2012"
 			data-name="Cálculo 2">Calc2</div>
-		<div class="course origin-2 done-2 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0012"
+		<div class="course cb" data-origin="s2" data-done="s2"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0012"
 			data-name="Psicologia, Educação e Temas Contemporâneos">PET</div>
-		<div class="course origin-2 done-2 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0022"
+		<div class="course cb" data-origin="s2" data-done="s2"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0022"
 			data-name="Sociedade, Meio Ambiente e Cidadania">SMC</div>
-		<div class="course origin-2 done-2 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0032"
+		<div class="course cb" data-origin="s2" data-done="s2"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0032"
 			data-name="Arte, Literatura e Cultura no Brasil">ALC</div>
-		<div class="course origin-2 done-2 cb" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH0042"
+		<div class="course cb" data-origin="s2" data-done="s2"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH0042"
 			data-name="Resolução de Problemas 2">RP2</div>
-		<div class="course origin-2 done-2 cb" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH0052"
+		<div class="course cb" data-origin="s2" data-done="s2"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH0052"
 			data-name="Estudos Diversificados 2">ED2</div>
 
-		<div class="course origin-3 done-3" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2023"
+		<div class="course" data-origin="s3" data-done="s3"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2023"
 			data-name="Algoritmos e Estruturas de Dados 1">AED1</div>
-		<div class="course origin-3 done-3" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2003"
+		<div class="course" data-origin="s3" data-done="s3"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2003"
 			data-name="Computação Orientada a Objetos">COO</div>
-		<div class="course origin-3 done-7" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2053"
+		<div class="course" data-origin="s3" data-done="s7"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2053"
 			data-name="Introdução à Estatística">IE</div>
-		<div class="course origin-3 done-7" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2013"
+		<div class="course" data-origin="s3" data-done="s7"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2013"
 			data-name="Matemática Discreta 1">MD</div>
-		<div class="course origin-3" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2033"
+		<div class="course" data-origin="s3"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2033"
 			data-name="Matrizes, Vetores e Geometria Analítica">MVGA</div>
 
-		<div class="course origin-4 done-4" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2024"
+		<div class="course" data-origin="s4" data-done="s4"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2024"
 			data-name="Algoritmos e Estruturas de Dados 2">AED2</div>
-		<div class="course origin-4 done-4" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2004"
+		<div class="course" data-origin="s4" data-done="s4"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2004"
 			data-name="Matrizes, Vetores e Geometria Analítica">BD</div>
-		<div class="course origin-4 done-4" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2044"
+		<div class="course" data-origin="s4" data-done="s4"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2044"
 			data-name="Sistemas Operacionais">SO</div>
-		<div class="course origin-4 done-4" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2034"
+		<div class="course" data-origin="s4" data-done="s4"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2034"
 			data-name="Organização de Computadores Digitais">OCD</div>
-		<div class="course origin-4 done-4" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2043"
+		<div class="course" data-origin="s4" data-done="s4"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2043"
 			data-name="Introdução à Teoria da Computação">ITC</div>
 
-		<div class="course origin-5 done-5" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2015"
+		<div class="course" data-origin="s5" data-done="s5"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2015"
 			data-name="Contabilidade para Computação">CC</div>
-		<div class="course origin-5 done-5" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2005"
+		<div class="course" data-origin="s5" data-done="s5"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2005"
 			data-name="Análise, Projeto e Interface Humano-Computador">IHC</div>
-		<div class="course origin-5 done-5" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2014"
+		<div class="course" data-origin="s5" data-done="s5"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2014"
 			data-name="Fundamentos de Sistemas de Informação">FSI</div>
-		<div class="course origin-5 doing" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2025"
+		<div class="course" data-origin="s5" data-doing="true"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2025"
 			data-name="Laboratório de Bancos de Dados">LBD</div>
-		<div class="course origin-5 done-5" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH2055"
+		<div class="course" data-origin="s5" data-done="s5"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH2055"
 			data-name="Arquitetura de Computadores">AC</div>
-		<div class="course origin-5 done-5" data-class-credits="2"
-			data-work-credits="0" data-course-code="ACH2035"
+		<div class="course" data-origin="s5" data-done="s5"
+			data-class-credits="2" data-work-credits="0" data-course-code="ACH2035"
 			data-name="Introdução à Administração para Computação">IAC</div>
 
-		<div class="course origin-6 doing" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2016"
+		<div class="course" data-origin="s6" data-doing="true"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2016"
 			data-name="Inteligência Artificial">IA</div>
-		<div class="course origin-6 done-6" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2006"
+		<div class="course" data-origin="s6" data-done="s6"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2006"
 			data-name="Engenharia de Sistemas de Informação 1">ESI</div>
-		<div class="course origin-6 done-6" data-class-credits="4"
-			data-work-credits="2" data-course-code="ACH2026"
+		<div class="course" data-origin="s6" data-done="s6"
+			data-class-credits="4" data-work-credits="2" data-course-code="ACH2026"
 			data-name="Redes de Computadores">RC</div>
-		<div class="course origin-6" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2036"
+		<div class="course" data-origin="s6"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2036"
 			data-name="Métodos Quantitativos Aplicados à Administração de Empresas 1">MQA</div>
-		<div class="course origin-6 done-6" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2027"
+		<div class="course" data-origin="s6" data-done="s6"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2027"
 			data-name="Prática e Gerenciamento de Projetos">PGP</div>
 
-		<div class="course origin-7 doing" data-class-credits="4"
-			data-work-credits="6" data-course-code="ACH2017"
+		<div class="course" data-origin="s7" data-doing="true"
+			data-class-credits="4" data-work-credits="6" data-course-code="ACH2017"
 			data-name="Projeto Supervisionado ou de Graduação 1">PSG1</div>
-		<div class="course origin-7 doing" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2047"
+		<div class="course" data-origin="s7" data-doing="true"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2047"
 			data-name="Economia para Computação">EC</div>
-		<div class="course origin-7 done-7" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2108"
+		<div class="course" data-origin="s7" data-done="s7"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2108"
 			data-name="Desafios de Programação 2">[DP]</div>
 
-		<div class="course origin-8" data-class-credits="4"
-			data-work-credits="6" data-course-code="ACH2018"
+		<div class="course" data-origin="s8"
+			data-class-credits="4" data-work-credits="6" data-course-code="ACH2018"
 			data-name="Projeto Supervisionado ou de Graduação 2">PSG2</div>
-		<div class="course origin-8" data-class-credits="4"
-			data-work-credits="0" data-course-code="ACH2008"
+		<div class="course" data-origin="s8"
+			data-class-credits="4" data-work-credits="0" data-course-code="ACH2008"
 			data-name="Empreendedores em Informática">EI</div>
 
 	</section>	

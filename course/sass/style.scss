@@ -8,9 +8,13 @@ html,body {
 }
 
 body {
-	@include background-image(linear-gradient(to bottom, white, #bcc));
+	@include background-image(linear-gradient(to top, white, #bcc));
 	color: #222;
   font-family: "Open Sans", sans-serif;
+}
+
+h1{
+  padding: 0.5em 1em;
 }
 
 nav {
@@ -42,10 +46,10 @@ nav {
 
 .course {
   display: inline-block;
-  position: relative;
+  position: absolute;
   cursor: pointer;
-  background: #eee;
-  color: #555;
+  @include background-image(linear-gradient(to bottom, white, #ccc));
+  color: #777;
   text-align: center;
   font-weight: bold;
   
@@ -55,18 +59,20 @@ nav {
   margin: 10px;
 
   border-radius: 5px;
-  border: 1px solid #888;
+  border: 1px solid rgba(200,200,200,0.8);
+
+  @include transition(all, 1s);
 }
 .course:hover {
   @include box-shadow(yellow 0px 0px 10px);
 }
-.course.doing {
-  background: #FF9742;
-  color: black;
+div[class*='course'][data-doing*='true'] {
+  @include background-image(linear-gradient(to bottom, #FFC391, #FF9742));
+  color: #222;
 }
-div[class*='course'][class*='done'] {
-  background: #80DB69;
-  color: black;
+div[class*='course'][data-done*='s'] {
+  @include background-image(linear-gradient(to bottom, #C1E6B8, #80DB69));
+  color: #222;
 }
 .course.cb {
   font-style: italic;
